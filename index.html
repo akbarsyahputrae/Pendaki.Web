@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Home | Landing page</title>
+</head>
+<body>
+    <header>      
+      <nav>
+        <div class="logo">
+          <h1>My Adventure</h1>
+        </div>
+        <ul>
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#mountain">Gununng Indonesia</a></li>
+          <li><a href="#about">Tentang Saya</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul> 
+        
+        <div class="toggle-menu">
+          <input type="checkbox">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+      </nav>
+    </header>
+    
+
+    <main>
+      
+      <div class="bg"><img src="./asset/bg.jpg" alt="">
+        <div class="content">
+          <p>"Jangan mengambil apapun selain gambar, jangan meninggalkan apapun selain jejak, jangan membunuh apapun selain waktu."</p>
+          <h1>SALAM PENDAKI </h1>
+        </div>
+      </div>  
+
+      <section class="mountain" id="mountain">
+        <div class="judul">
+          <h1>Gunung Tertinggi Di Indonesia</h1>
+          <div class="line"></div>
+        </div>
+        
+        <div class="row">
+          <article>
+            <img src="./asset/Puncak jaya Papua.jpg" alt="">
+            <h4>Gunung Carstensz Pyramid</h4>
+            <p>Gunung Carstensz Pyramid merupakan gunung tertinggi di Indonesia. Gunung Carstensz Pyramid atau Puncak Jaya memiliki ketinggian 4.888 meter di atas permukaan laut (mdpl).</p>
+            <button class="klik">Selengkapnya</button>
+          </article>    
+          <article>
+            <img src="./asset/Kerinci.jpg" alt="">
+            <h4>Gunung Kerinci</h4>
+            <p>Dengan ketinggian 3.805 mdpl, Gunung Kerinci menjadi gunung tertinggi di Pulau Sumatera. Gunung yang berada dalam kawasan Taman Nasional Kerinci Seblat ini adalah gunung berapi yang masih aktif.</p>
+            <button class="klik">Selengkapnya</button>
+          </article>
+        </div>
+      </section>
+       
+
+      <div class="judul" id="about">
+        <h1>Tentang Saya</h1>
+        <div class="line"></div>
+      </div>
+      <aside>
+        <div class="img"><img src="./asset/Me.jpg" alt="Me"></div>
+        <h1>Furqan Akbar Syahputra</h1>
+        <div class="text">Mahasiswa Universitas Mikroskil dari <strong>Medan, Indonesia</strong></div>
+        <p>Halo, Saya akbar sedang mengikuti program MSIB Batch 3 x Dicoding mengambil kelas pengembagan Front-end & Back-end dan webiste ini adalah tugas pertama saya.</p>
+        <ul>
+          <li><a href="#"><img src="./asset/fb.png" width="25px" height="25px" alt=""></a></li>
+          <li><a href="#"><img src="./asset/ig.png" width="25px" height="25px" alt=""></a></li>
+          <li><a href="#"><img src="./asset/link.png" width="25px" height="25px" alt=""></a></li>
+          <li><a href="#"><img src="./asset/tw.png" width="25px" height="25px" alt=""></a></li>
+        </ul>
+      </aside>
+
+      <section class="kontak" id="kontak">
+        <div class="judul">
+          <h1>Kontak</h1>
+          <div class="line"></div>
+        </div>
+        
+        <form action="" method="post">
+            <div class="form-group">
+              <label for="">Nama Lengkap</label>
+              <input type="text">
+            </div>
+            <div class="form-group">
+              <label for="">Alamat Email</label>
+              <input type="email">
+            </div>
+            <div class="form-group">
+              <label for="">Pesan</label>
+              <textarea name="" id="" rows="5" placeholder="Masukkan pesan disini..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" class=" submit">Kirim Pesan</button>
+            </div>
+        </form>
+
+      </section>
+     </main>
+   
+    <footer>
+      <p>© Copyright akbarsyahputrae 2022</p>
+    </footer>
+
+
+    <script src="./dist/js/script.js"></script>
+  </body>
+</html>

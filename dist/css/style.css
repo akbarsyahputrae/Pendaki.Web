@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+
+header{
+    background-color: rgb(20, 141, 20);
+    padding: 10px 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+}    
+
+nav .logo{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    color: rgba(241, 216, 216, 0.911);
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: rgb(230, 240, 248);
+}
+
+.toggle-menu{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.toggle-menu input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.toggle-menu span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+.toggle-menu span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.toggle-menu span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.toggle-menu input:checked ~ span:nth-child(2){
+    background-color: white;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.toggle-menu input:checked ~ span:nth-child(4){
+    background-color: white;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.toggle-menu input:checked ~ span:nth-child(3){
+    background-color: white;
+    transform: scale(0);
+}
+
+.bg{
+    
+}
+
+.content{
+    margin-top: -30%;
+    margin-bottom: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.bg img{
+    width: 100%;
+    
+}
+
+.line{
+    width: 250px;
+    height: 4px;
+    background: rgb(22, 156, 22) ;
+    margin: 10px auto;
+    border-radius: 5px;
+    align-content: space-between;
+}
+
+section{
+    width: 80%;
+    margin: 80px auto;
+}   
+
+.judul{
+    text-align: center;
+    font-size: 4vmin;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row article img{
+    width: 300px;
+}
+
+h4{
+    font-size: 3vmin;
+    margin-top: 10px;
+}
+
+.row article p{
+    padding: 0px 40px;
+    text-align: justify;
+    margin: 10px auto;
+}
+
+aside{
+    margin: 0 auto;
+    width: 800px;
+    height: 600px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    border: 3px solid rgb(22, 156, 22);
+    text-align: center;
+}
+
+aside .img img{
+    width: 35%;
+    margin: 20px auto;
+    border: 1px solid #eaeaea;
+    border-radius: 200px;
+    
+}
+
+aside ul{
+margin: 0 auto;
+}   
+
+aside ul li{
+    list-style: none;
+    display: inline-flex;
+}
+
+aside h1{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+    color: #694469;
+}
+
+aside .text{
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+    color: #324e63;
+}
+
+aside p{
+    margin: 0;
+    padding: 10px;
+    height: auto;
+    color: #324e63
+}
+
+.kontak{
+    background: whitesmoke;
+    width: 90%;
+    padding: 2rem;
+    border: 3px solid rgb(22, 156, 22);
+    border-radius: 10px;
+}
+
+form,
+input,
+textarea,
+button
+{
+    font-family: inherit;
+    font-size: initial;
+}
+
+.form-group label{
+    display: block;
+    margin: 2rem 0 0.5rem 0;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea{
+    width: 100%;
+    padding: 1rem 0.8rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"]{
+    height: 3rem;
+}
+
+.form-group textarea{
+    resize: vertical;
+}
+
+.submit{
+    background: rgb(22, 156, 22);
+    color: white;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+    border:none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.klik{
+    background: rgb(22, 156, 22);
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 0.5rem;
+    border:none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submit:hover{
+    background: rgb(141, 248, 141);
+}
+
+footer{
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    margin-top: 40px;
+    background: rgb(20, 141, 20);
+    text-align: center;
+}
+
+footer p{
+    color: whitesmoke;
+    margin: 20px auto;
+}
+
+@media screen and (max-width: 1000px){
+    nav ul{
+        width: 60%;
+    }        
+}
+/* Tablet */
+@media screen and (max-width: 768px){
+    nav ul{
+        width: 70%;
+    }        
+}
+
+@media screen and (max-width: 576px){
+
+    .toggle-menu{
+        display: flex;
+    }
+
+    nav ul{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(22, 156, 22);
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }   
+    
+    nav ul.slide{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row article h4{
+        font-weight: bold;
+        font-size: large;
+    }
+
+    .row article p{
+        padding: 0px 40px;
+        text-align: justify;
+        margin: 10px auto;
+    }
+    
+    article{
+        margin-top: 20px;
+    }
+
+    aside{
+        margin: 0 auto;
+        width: 80%;
+        height: 800px;
+        background-color: #fafafa;
+        border-radius: 10px;
+        border: 3px solid rgb(22, 156, 22);
+        text-align: center;            
+    }
+
+    aside .img img{
+        background-image: url('/asset/Me.jpg') no-rep;
+        background-color: #eaeaea;
+        background-size: cover;
+        border-radius: 200px;
+        width: 80%;
+        height: 40%;
+        margin: 20px auto;
+        border: 1px solid #eaeaea;
+        margin-top: 20px;
+    }
+}
+
